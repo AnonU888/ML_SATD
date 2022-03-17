@@ -1,0 +1,665 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0217.1203                               -->
+<workbook source-build='2020.4.2 (20204.21.0217.1203)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (stacked_ML_types)' inline='true' name='federated.05ybwxy12ptrt016tnoaa1s2z8it' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='stacked_ML_types' name='excel-direct.14dcb5o03ezvh71gtgren1tqpfeq'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Downloads/CS/MLTD Project/RQs/Datasets/stacked_ML_types.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.14dcb5o03ezvh71gtgren1tqpfeq' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D1713:no:A1:D1713:0' header='yes' outcome='6'>
+            <column datatype='string' name='Dataset ID' ordinal='0' />
+            <column datatype='string' name='Repo Type' ordinal='1' />
+            <column datatype='string' name='ML TD Type' ordinal='2' />
+            <column datatype='string' name='ML Pipeline Stage' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.14dcb5o03ezvh71gtgren1tqpfeq' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D1713:no:A1:D1713:0' header='yes' outcome='6'>
+            <column datatype='string' name='Dataset ID' ordinal='0' />
+            <column datatype='string' name='Repo Type' ordinal='1' />
+            <column datatype='string' name='ML TD Type' ordinal='2' />
+            <column datatype='string' name='ML Pipeline Stage' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D1713:no:A1:D1713:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dataset ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dataset ID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Dataset ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_3D8B7965D0DB4FD8AE48893679D245AD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Repo Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Repo Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Repo Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_3D8B7965D0DB4FD8AE48893679D245AD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ML TD Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ML TD Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ML TD Type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_3D8B7965D0DB4FD8AE48893679D245AD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ML Pipeline Stage</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ML Pipeline Stage]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ML Pipeline Stage</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_3D8B7965D0DB4FD8AE48893679D245AD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ML SATD Group' datatype='string' name='[ML TD Type (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[ML TD Type]' new-bin='true'>
+          <bin default-name='false' value='&quot;Awareness&quot;'>
+            <value>&quot;MLInter&quot;</value>
+            <value>&quot;MLKnow&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Code Dependency&quot;'>
+            <value>&quot;CDT&quot;</value>
+            <value>&quot;GC&quot;</value>
+            <value>&quot;ML&quot;</value>
+            <value>&quot;MLDepend&quot;</value>
+            <value>&quot;UMC&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Configurable Options&quot;'>
+            <value>&quot;HP Conf&quot;</value>
+            <value>&quot;Layer Conf&quot;</value>
+            <value>&quot;Weight Conf&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Data Dependency&quot;'>
+            <value>&quot;Data Conf&quot;</value>
+            <value>&quot;DS Configuration&quot;</value>
+            <value>&quot;PODT&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Duplicate Code Elimination&quot;'>
+            <value>&quot;DFEC&quot;</value>
+            <value>&quot;DMC&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Modularity&quot;'>
+            <value>&quot;Abs&quot;</value>
+            <value>&quot;BE&quot;</value>
+            <value>&quot;MCM&quot;</value>
+            <value>&quot;MCR&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Performance&quot;'>
+            <value>&quot;MLRelia&quot;</value>
+            <value>&quot;PQ&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Readability&quot;'>
+            <value>&quot;MCC&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Scalability&quot;'>
+            <value>&quot;Proto&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[ML TD Type]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_3D8B7965D0DB4FD8AE48893679D245AD]' role='measure' type='quantitative' />
+      <column-instance column='[ML TD Type]' derivation='None' name='[none:ML TD Type:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:ML TD Type:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;HP Conf&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Abs&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PQ&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;DFEC&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MCR&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Layer Conf&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;DMC&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;MLRelia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BE&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Proto&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;MLInter&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;DS Configuration&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;MDepend&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;ML&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MLKnow&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PODT&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;MCC&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;GC&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CDT&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;UMC&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;MLDepend&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;MCM&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Data Conf&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Weight Conf&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[ML TD Type (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Awareness&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Duplicate Code Elimination&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Data Dependency&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Scalability&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Performance&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Configurable Options&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Modularity&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Code Dependency&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Readability&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_3D8B7965D0DB4FD8AE48893679D245AD'>
+            <properties context=''>
+              <relation connection='excel-direct.14dcb5o03ezvh71gtgren1tqpfeq' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D1713:no:A1:D1713:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Dataset ID' ordinal='0' />
+                  <column datatype='string' name='Repo Type' ordinal='1' />
+                  <column datatype='string' name='ML TD Type' ordinal='2' />
+                  <column datatype='string' name='ML Pipeline Stage' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='ML Type by Repo Type (Percentages) (4)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>ML SATD Group by Repo Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (stacked_ML_types)' name='federated.05ybwxy12ptrt016tnoaa1s2z8it' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05ybwxy12ptrt016tnoaa1s2z8it'>
+            <column caption='ML SATD Group' datatype='string' name='[ML TD Type (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[ML TD Type]' new-bin='true'>
+                <bin default-name='false' value='&quot;Awareness&quot;'>
+                  <value>&quot;MLInter&quot;</value>
+                  <value>&quot;MLKnow&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Code Dependency&quot;'>
+                  <value>&quot;CDT&quot;</value>
+                  <value>&quot;GC&quot;</value>
+                  <value>&quot;ML&quot;</value>
+                  <value>&quot;MLDepend&quot;</value>
+                  <value>&quot;UMC&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Configurable Options&quot;'>
+                  <value>&quot;HP Conf&quot;</value>
+                  <value>&quot;Layer Conf&quot;</value>
+                  <value>&quot;Weight Conf&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Data Dependency&quot;'>
+                  <value>&quot;Data Conf&quot;</value>
+                  <value>&quot;DS Configuration&quot;</value>
+                  <value>&quot;PODT&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Duplicate Code Elimination&quot;'>
+                  <value>&quot;DFEC&quot;</value>
+                  <value>&quot;DMC&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Modularity&quot;'>
+                  <value>&quot;Abs&quot;</value>
+                  <value>&quot;BE&quot;</value>
+                  <value>&quot;MCM&quot;</value>
+                  <value>&quot;MCR&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Performance&quot;'>
+                  <value>&quot;MLRelia&quot;</value>
+                  <value>&quot;PQ&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Readability&quot;'>
+                  <value>&quot;MCC&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Scalability&quot;'>
+                  <value>&quot;Proto&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[ML TD Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Repo Type]' role='dimension' type='nominal' />
+            <column-instance column='[ML TD Type]' derivation='None' name='[none:ML TD Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Repo Type]' derivation='None' name='[none:Repo Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ML TD Type]' derivation='Count' name='[pcto:cnt:ML TD Type:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[ML TD Type (group)]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[ML TD Type (group)]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[ML TD Type (group)]' member='&quot;Configurable Options&quot;' />
+                <groupfilter function='member' level='[ML TD Type (group)]' member='&quot;Duplicate Code Elimination&quot;' />
+                <groupfilter function='member' level='[ML TD Type (group)]' member='&quot;Scalability&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[none:ML TD Type:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:ML TD Type:nk]' />
+              <groupfilter function='member' level='[none:ML TD Type:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.05ybwxy12ptrt016tnoaa1s2z8it].[none:ML TD Type:nk]</column>
+            <column>[federated.05ybwxy12ptrt016tnoaa1s2z8it].[ML TD Type (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[pcto:cnt:ML TD Type:qk:3]' scope='cols' value='% of SATD' />
+            <encoding attr='space' class='0' field='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[pcto:cnt:ML TD Type:qk:3]' field-type='quantitative' major-origin='0.0' major-show='false' major-spacing='0.10000000000000001' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[none:Repo Type:nk]' value='43' />
+            <format attr='width' field='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[none:Repo Type:nk]' value='146' />
+            <format attr='font-size' field='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[ML TD Type (group)]' value='7' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' data-class='subtotal' field='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[ML TD Type (group)]' value='10' />
+            <format attr='font-size' data-class='total' field='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[ML TD Type (group)]' value='6' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[ML TD Type (group)]' value='#000000' />
+            <format attr='color' field='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[none:Repo Type:nk]' value='#000000' />
+            <format attr='font-size' field='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[ML TD Type (group)]' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[ML TD Type (group)]' />
+              <text column='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[pcto:cnt:ML TD Type:qk:3]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='86' />
+                <format attr='maxheight' value='86' />
+                <format attr='minwidth' value='106' />
+                <format attr='maxwidth' value='106' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05ybwxy12ptrt016tnoaa1s2z8it].[none:Repo Type:nk]</rows>
+        <cols>([federated.05ybwxy12ptrt016tnoaa1s2z8it].[ML TD Type (group)] * [federated.05ybwxy12ptrt016tnoaa1s2z8it].[pcto:cnt:ML TD Type:qk:3])</cols>
+        <percentages enabled='true' mode='row' />
+      </table>
+      <simple-id uuid='{1002C068-DF17-4D5C-87C2-2905180E65E8}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='ML Type by Repo Type (Percentages) (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='128'>
+            <card pane-specification-id='0' param='[federated.05ybwxy12ptrt016tnoaa1s2z8it].[ML TD Type (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05ybwxy12ptrt016tnoaa1s2z8it].[ML TD Type (group)]</field>
+            <field>[federated.05ybwxy12ptrt016tnoaa1s2z8it].[none:ML TD Type:nk]</field>
+            <field>[federated.05ybwxy12ptrt016tnoaa1s2z8it].[none:Repo Type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8D61DB67-C1E5-4FCD-A482-8CD675C442CF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='ML Type by Repo Type (Percentages) (4)' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

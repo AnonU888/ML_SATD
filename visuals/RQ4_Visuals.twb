@@ -1,0 +1,1171 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0217.1203                               -->
+<workbook source-build='2020.4.2 (20204.21.0217.1203)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1+ (Multiple Connections)' inline='true' name='federated.0lfsmv21hmlr3z1gf2rhd135aa2j' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='stacked_ML_types' name='excel-direct.0pyxq9c0vn5is31c0pi3o0gr7ecl'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Downloads/CS/MLTD Project/RQs/Datasets/stacked_ML_types.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='commit_data' name='textscan.02ov7kx09lsj00161hikm13z2l9h'>
+            <connection class='textscan' directory='D:/Downloads/CS/MLTD Project/RQs/Datasets' filename='commit_data.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='diff_data' name='textscan.0f9sxw10ymx9r71fdfpuu185su54'>
+            <connection class='textscan' directory='D:/Downloads/CS/MLTD Project/RQs/Datasets' filename='diff_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0pyxq9c0vn5is31c0pi3o0gr7ecl' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D1713:no:A1:D1713:0' header='yes' outcome='6'>
+            <column datatype='string' name='Dataset ID' ordinal='0' />
+            <column datatype='string' name='Repo Type' ordinal='1' />
+            <column datatype='string' name='ML TD Type' ordinal='2' />
+            <column datatype='string' name='ML Pipeline Stage' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.0pyxq9c0vn5is31c0pi3o0gr7ecl' name='Sheet1' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:D1713:no:A1:D1713:0' header='yes' outcome='6'>
+              <column datatype='string' name='Dataset ID' ordinal='0' />
+              <column datatype='string' name='Repo Type' ordinal='1' />
+              <column datatype='string' name='ML TD Type' ordinal='2' />
+              <column datatype='string' name='ML Pipeline Stage' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='textscan.02ov7kx09lsj00161hikm13z2l9h' name='commit_data.csv' table='[commit_data#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Dataset ID' ordinal='0' />
+              <column datatype='integer' name='Commit Amount' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='textscan.02ov7kx09lsj00161hikm13z2l9h' name='diff_data.csv' table='[diff_data#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Dataset ID' ordinal='0' />
+              <column datatype='integer' name='Diff Amount' ordinal='1' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Commit Amount]' value='[commit_data.csv].[Commit Amount]' />
+          <map key='[Dataset ID (commit_data.csv)]' value='[commit_data.csv].[Dataset ID]' />
+          <map key='[Dataset ID (diff_data.csv)]' value='[diff_data.csv].[Dataset ID]' />
+          <map key='[Dataset ID]' value='[Sheet1].[Dataset ID]' />
+          <map key='[Diff Amount]' value='[diff_data.csv].[Diff Amount]' />
+          <map key='[ML Pipeline Stage]' value='[Sheet1].[ML Pipeline Stage]' />
+          <map key='[ML TD Type]' value='[Sheet1].[ML TD Type]' />
+          <map key='[Repo Type]' value='[Sheet1].[Repo Type]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D1713:no:A1:D1713:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[commit_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[diff_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dataset ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dataset ID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Dataset ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_4FBFAD5E06004A2CA125D95C76A7F08C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Repo Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Repo Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Repo Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_4FBFAD5E06004A2CA125D95C76A7F08C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ML TD Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ML TD Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ML TD Type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_4FBFAD5E06004A2CA125D95C76A7F08C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ML Pipeline Stage</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ML Pipeline Stage]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ML Pipeline Stage</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_4FBFAD5E06004A2CA125D95C76A7F08C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dataset ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dataset ID (commit_data.csv)]</local-name>
+            <parent-name>[commit_data.csv]</parent-name>
+            <remote-alias>Dataset ID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[commit_data.csv_556647DBB2A44E2D8E0F3D98A02C7AA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Commit Amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Commit Amount]</local-name>
+            <parent-name>[commit_data.csv]</parent-name>
+            <remote-alias>Commit Amount</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[commit_data.csv_556647DBB2A44E2D8E0F3D98A02C7AA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dataset ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dataset ID (diff_data.csv)]</local-name>
+            <parent-name>[diff_data.csv]</parent-name>
+            <remote-alias>Dataset ID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diff_data.csv_8212CD17892C4564992B99B1D11BA67F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diff Amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Diff Amount]</local-name>
+            <parent-name>[diff_data.csv]</parent-name>
+            <remote-alias>Diff Amount</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[diff_data.csv_8212CD17892C4564992B99B1D11BA67F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Amount of Commits until Removal' datatype='integer' name='[Commit Amount]' role='measure' type='quantitative' />
+      <column caption='Dataset ID (commit data.csv)' datatype='string' name='[Dataset ID (commit_data.csv)]' role='dimension' type='nominal' />
+      <column caption='Dataset ID (diff data.csv)' datatype='string' name='[Dataset ID (diff_data.csv)]' role='dimension' type='nominal' />
+      <column caption='Modified AST Amount' datatype='integer' name='[Diff Amount]' role='measure' type='quantitative' />
+      <column datatype='string' name='[ML Pipeline Stage]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Data Acq&quot;' value='Data Acquisition' />
+          <alias key='&quot;Data Pre&quot;' value='Data Preprocessing' />
+        </aliases>
+      </column>
+      <column caption='ML SATD Group' datatype='string' name='[ML TD Type (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[ML TD Type]' new-bin='true'>
+          <bin default-name='false' value='&quot;Awareness&quot;'>
+            <value>&quot;MLInter&quot;</value>
+            <value>&quot;MLKnow&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Code Dependency&quot;'>
+            <value>&quot;CDT&quot;</value>
+            <value>&quot;GC&quot;</value>
+            <value>&quot;ML&quot;</value>
+            <value>&quot;MLDepend&quot;</value>
+            <value>&quot;UMC&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Configurable Options&quot;'>
+            <value>&quot;HP Conf&quot;</value>
+            <value>&quot;Layer Conf&quot;</value>
+            <value>&quot;Weight Conf&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Data Dependency&quot;'>
+            <value>&quot;Data Conf&quot;</value>
+            <value>&quot;DS Configuration&quot;</value>
+            <value>&quot;PODT&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Duplicate Code Elimination&quot;'>
+            <value>&quot;DFEC&quot;</value>
+            <value>&quot;DMC&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Modularity&quot;'>
+            <value>&quot;Abs&quot;</value>
+            <value>&quot;BE&quot;</value>
+            <value>&quot;MCM&quot;</value>
+            <value>&quot;MCR&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Performance&quot;'>
+            <value>&quot;MLRelia&quot;</value>
+            <value>&quot;PQ&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Readability&quot;'>
+            <value>&quot;MCC&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Scalability&quot;'>
+            <value>&quot;Proto&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[ML TD Type]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_4FBFAD5E06004A2CA125D95C76A7F08C]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='commit_data.csv' datatype='table' name='[__tableau_internal_object_id__].[commit_data.csv_556647DBB2A44E2D8E0F3D98A02C7AA2]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='diff_data.csv' datatype='table' name='[__tableau_internal_object_id__].[diff_data.csv_8212CD17892C4564992B99B1D11BA67F]' role='measure' type='quantitative' />
+      <column-instance column='[ML TD Type]' derivation='Attribute' name='[attr:ML TD Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[ML Pipeline Stage]' derivation='None' name='[none:ML Pipeline Stage:nk]' pivot='key' type='nominal' />
+      <column-instance column='[ML TD Type]' derivation='None' name='[none:ML TD Type:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:ML TD Type:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;MCC&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Abs&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;DFEC&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MLInter&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;MCM&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;DS Configuration&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PODT&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BE&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Weight Conf&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;HP Conf&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;MLKnow&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Proto&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MLDepend&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;MCR&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Layer Conf&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CDT&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;UMC&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;MDepend&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Data Conf&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:ML TD Type:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;MCC&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Abs&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;DFEC&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MLInter&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;MCM&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;DS Configuration&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PODT&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;BE&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Weight Conf&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;HP Conf&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;MLKnow&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Proto&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MLDepend&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;MCR&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Layer Conf&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CDT&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;UMC&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;MDepend&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Data Conf&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[ML TD Type (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Awareness&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Duplicate Code Elimination&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Data Dependency&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Readability&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Performance&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Configurable Options&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Modularity&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Code Dependency&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Scalability&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:ML Pipeline Stage:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Data Acq&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Modeling&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Training&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Evaluation&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Prediction&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Data Pre&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>%null%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_4FBFAD5E06004A2CA125D95C76A7F08C'>
+            <properties context=''>
+              <relation connection='excel-direct.0pyxq9c0vn5is31c0pi3o0gr7ecl' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D1713:no:A1:D1713:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Dataset ID' ordinal='0' />
+                  <column datatype='string' name='Repo Type' ordinal='1' />
+                  <column datatype='string' name='ML TD Type' ordinal='2' />
+                  <column datatype='string' name='ML Pipeline Stage' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='commit_data.csv' id='commit_data.csv_556647DBB2A44E2D8E0F3D98A02C7AA2'>
+            <properties context=''>
+              <relation connection='textscan.02ov7kx09lsj00161hikm13z2l9h' name='commit_data.csv' table='[commit_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Dataset ID' ordinal='0' />
+                  <column datatype='integer' name='Commit Amount' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='diff_data.csv' id='diff_data.csv_8212CD17892C4564992B99B1D11BA67F'>
+            <properties context=''>
+              <relation connection='textscan.02ov7kx09lsj00161hikm13z2l9h' name='diff_data.csv' table='[diff_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Dataset ID' ordinal='0' />
+                  <column datatype='integer' name='Diff Amount' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Dataset ID]' />
+              <expression op='[Dataset ID (commit_data.csv)]' />
+            </expression>
+            <first-end-point object-id='Sheet1_4FBFAD5E06004A2CA125D95C76A7F08C' />
+            <second-end-point object-id='commit_data.csv_556647DBB2A44E2D8E0F3D98A02C7AA2' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Dataset ID]' />
+              <expression op='[Dataset ID (diff_data.csv)]' />
+            </expression>
+            <first-end-point object-id='Sheet1_4FBFAD5E06004A2CA125D95C76A7F08C' />
+            <second-end-point object-id='diff_data.csv_8212CD17892C4564992B99B1D11BA67F' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='ML Pipelines Diff + Commits'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1+ (Multiple Connections)' name='federated.0lfsmv21hmlr3z1gf2rhd135aa2j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lfsmv21hmlr3z1gf2rhd135aa2j'>
+            <column caption='Amount of Commits until Removal' datatype='integer' name='[Commit Amount]' role='measure' type='quantitative' />
+            <column caption='Modified AST Amount' datatype='integer' name='[Diff Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[ML Pipeline Stage]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Data Acq&quot;' value='Data Acquisition' />
+                <alias key='&quot;Data Pre&quot;' value='Data Preprocessing' />
+              </aliases>
+            </column>
+            <column-instance column='[Commit Amount]' derivation='Median' name='[med:Commit Amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Diff Amount]' derivation='Median' name='[med:Diff Amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ML Pipeline Stage]' derivation='None' name='[none:ML Pipeline Stage:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[none:ML Pipeline Stage:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:ML Pipeline Stage:nk]' />
+              <groupfilter function='member' level='[none:ML Pipeline Stage:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <alphabetic-sort column='[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[none:ML Pipeline Stage:nk]' direction='ASC' />
+          <slices>
+            <column>[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[none:ML Pipeline Stage:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[med:Commit Amount:qk]' value='81' />
+            <encoding attr='space' class='0' field='[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[med:Diff Amount:qk]' field-type='quantitative' major-origin='0.0' major-spacing='100.0' scope='rows' type='space' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[med:Commit Amount:qk]' field-type='quantitative' max='54.909340659340657' min='5.5906593406593403' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[none:ML Pipeline Stage:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='7' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='384' />
+                <format attr='maxwidth' value='384' />
+                <format attr='minheight' value='320' />
+                <format attr='maxheight' value='320' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[med:Diff Amount:qk]</rows>
+        <cols>[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[med:Commit Amount:qk]</cols>
+      </table>
+      <simple-id uuid='{5AFDFF8C-4F29-46E7-8F9F-A764982B1171}' />
+    </worksheet>
+    <worksheet name='SATD Groups Diff + Commits'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1+ (Multiple Connections)' name='federated.0lfsmv21hmlr3z1gf2rhd135aa2j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lfsmv21hmlr3z1gf2rhd135aa2j'>
+            <column caption='Amount of Commits until Removal' datatype='integer' name='[Commit Amount]' role='measure' type='quantitative' />
+            <column caption='Modified AST Amount' datatype='integer' name='[Diff Amount]' role='measure' type='quantitative' />
+            <column caption='ML SATD Group' datatype='string' name='[ML TD Type (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[ML TD Type]' new-bin='true'>
+                <bin default-name='false' value='&quot;Awareness&quot;'>
+                  <value>&quot;MLInter&quot;</value>
+                  <value>&quot;MLKnow&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Code Dependency&quot;'>
+                  <value>&quot;CDT&quot;</value>
+                  <value>&quot;GC&quot;</value>
+                  <value>&quot;ML&quot;</value>
+                  <value>&quot;MLDepend&quot;</value>
+                  <value>&quot;UMC&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Configurable Options&quot;'>
+                  <value>&quot;HP Conf&quot;</value>
+                  <value>&quot;Layer Conf&quot;</value>
+                  <value>&quot;Weight Conf&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Data Dependency&quot;'>
+                  <value>&quot;Data Conf&quot;</value>
+                  <value>&quot;DS Configuration&quot;</value>
+                  <value>&quot;PODT&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Duplicate Code Elimination&quot;'>
+                  <value>&quot;DFEC&quot;</value>
+                  <value>&quot;DMC&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Modularity&quot;'>
+                  <value>&quot;Abs&quot;</value>
+                  <value>&quot;BE&quot;</value>
+                  <value>&quot;MCM&quot;</value>
+                  <value>&quot;MCR&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Performance&quot;'>
+                  <value>&quot;MLRelia&quot;</value>
+                  <value>&quot;PQ&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Readability&quot;'>
+                  <value>&quot;MCC&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Scalability&quot;'>
+                  <value>&quot;Proto&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[ML TD Type]' role='dimension' type='nominal' />
+            <column-instance column='[Commit Amount]' derivation='Median' name='[med:Commit Amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Diff Amount]' derivation='Median' name='[med:Diff Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[ML TD Type (group)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[ML TD Type (group)]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[ML TD Type (group)]' member='%null%' />
+                <groupfilter function='member' level='[ML TD Type (group)]' member='&quot;Duplicate Code Elimination&quot;' />
+                <groupfilter function='member' level='[ML TD Type (group)]' member='&quot;RDB&quot;' />
+                <groupfilter function='member' level='[ML TD Type (group)]' member='&quot;Readability&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[med:Diff Amount:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[ML TD Type (group)]</column>
+            <column>[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[med:Diff Amount:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[ML TD Type (group)]' />
+              <lod column='[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[ML TD Type (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='6' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+                <format attr='size' value='2' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='264' />
+                <format attr='maxheight' value='264' />
+                <format attr='minwidth' value='300' />
+                <format attr='maxwidth' value='300' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[med:Diff Amount:qk]</rows>
+        <cols>[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[med:Commit Amount:qk]</cols>
+      </table>
+      <simple-id uuid='{8F1964FA-178D-4669-8921-F721192EEEF2}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='SATD Groups Diff + Commits'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='2' param='[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[ML TD Type (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[ML TD Type (group)]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8C56D0AA-3538-43C6-8AD9-7AE3ABD84573}' />
+    </window>
+    <window class='worksheet' maximized='true' name='ML Pipelines Diff + Commits'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='2' param='[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[none:ML Pipeline Stage:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight field='[federated.0lfsmv21hmlr3z1gf2rhd135aa2j].[none:ML Pipeline Stage:nk]'>
+          <bucket-selection />
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5AD107EC-E93D-43FD-9DA9-3AFB1845646A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='ML Pipelines Diff + Commits' width='192'>
+      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
+      gBDX/j/DLZq3Wto71AAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='SATD Groups Diff + Commits' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
